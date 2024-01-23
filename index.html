@@ -21,6 +21,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'color-primary': '#131318',
+                'color-active' : '#FF4240',
               }
             }
           }
@@ -33,14 +35,65 @@
       </style>
 </head>
 <body class="font-manrope">
-     <header>
-
+     <header class="max-w-6xl mx-auto px-4">
+        <!---navbar starts here--->
+        <nav class="flex justify-between items-center my-6 lg:my-9">
+           <div class="flex justify-between items-center">
+            <i class="fa-solid fa-bars mr-3 mt-3 lg:hidden"></i>
+            <h2 class="text-xl lg:text-3xl text-color-primary font-extrabold">Hockey<sup class="text-3xl 
+              text-color-active">,</sup>s</h2>
+           </div>
+            <div class="space-x-11 hidden lg:flex">
+                <a class="text-sm text-color-active" href="">Home</a>
+                <a class="text-sm" href="">About</a>
+                <a class="text-sm" href="">Pages</a>
+                <a class="text-sm" href="">Blog</a>
+                <a class="text-sm" href="">Contact</a>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="fa-solid fa-search text-sm mr-5 hidden lg:flex"></i>
+                <button class="btn btn-error text-white text-sm font-semibold p-2 lg:px-5 rounded-md">Get Ticket</button>
+            </div>
+        </nav>
+        <!---navbar ends here--->
+        <!----banner start here---->
+       <div class="relative">
+        <div class="carousel">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./Images/banner-img.png" class="w-full lg:h-[480px] rounded-lg" /> 
+            <div class="absolute flex bottom-5 left-36 lg:bottom-6 lg:left-6 gap-2">
+              <a href="#slide3" class="btn btn-circle btn-neutral text-white">❮</a> 
+              <a href="#slide2" class="btn btn-circle btn-neutral text-white">❯</a>
+            </div>    
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./Images/program-img2.png" class="w-full lg:h-[480px] rounded-lg" /> 
+            <div class="absolute flex bottom-5 left-36 lg:bottom-6 lg:left-6 gap-2">
+              <a href="#slide1" class="btn btn-circle btn-neutral text-white">❮</a> 
+              <a href="#slide3" class="btn btn-circle btn-neutral text-white">❯</a>
+            </div>    
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./Images/program-img3.png" class="w-full lg:h-[480px] rounded-lg" /> 
+            <div class="absolute flex bottom-5 left-36 lg:bottom-6 lg:left-6 gap-2">
+              <a href="#slide2" class="btn btn-circle btn-neutral text-white">❮</a> 
+              <a href="#slide1" class="btn btn-circle btn-neutral text-white">❯</a>
+            </div>    
+          </div>   
+        </div>
+        <div class="bg-color-primary absolute lg:w-96 lg:right-7 lg:bottom-6 p-4 rounded-lg
+         text-white mt-2">
+          <h3 class="text-lg font-bold mb-1">Meet all the heroes from the field</h3>
+          <p class="text-sm opacity-55">The votes are decided by media representatives, national team coaches, and national 
+           team captains.</p>
+       </div>
+       </div>
      </header>
      <main>
 
      </main>
      <footer>
-        
+
      </footer>
 </body>
 </html>
